@@ -10,21 +10,7 @@
   margin: 0 auto;
 }
 
-.header {
-  grid-area: h;
-  background-color: green;
-}
-
-.header img {
-  width: 80px;
-}
-
-.nav {
-  grid-area: n;
-  background-color: greenyellow;
-}
-
-.content {
+.app-wrapper-content {
   grid-area: c;
   background-color: grey;
 }
