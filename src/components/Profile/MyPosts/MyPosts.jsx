@@ -2,7 +2,10 @@ import React from 'react';
 import c from './MyPosts.module.css'
 import Post from './Post/Post';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+    let postElements =
+        props.posts.map(p => <Post message={p.message} numLike={p.numLike} />);
+
     return (
         <div className={c.postBlock}>
             <h3>My post</h3>
@@ -11,8 +14,7 @@ const MyPosts = () => {
                 <div><button>Add post</button></div>
             </div>
             <div className={c.posts}>
-                <Post message='Hi, how are you?' numLike='15' />
-                <Post message="It's my first post" numLike='10' />
+                {postElements}
             </div>
         </div>
     );
