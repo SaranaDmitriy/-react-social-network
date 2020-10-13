@@ -1,10 +1,16 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 5fr 10fr;
 }
 
 .dialogsItems {
     padding: 10px;
+}
+
+.dialogsItems img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .dialogsItems .active {
@@ -12,6 +18,8 @@
 }
 
 .dialog {
+    display: flex;
+    justify-content: space-between;
 }
 
 .messages {
